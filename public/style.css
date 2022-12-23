@@ -1,0 +1,386 @@
+/*RESETANDO ESTILOS PADRÕES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  padding: 1rem 0;
+  background-color: #0aacdc;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/*DEFININDO O CONTAINER GERAL*/
+.center {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*INÍCIO DA ESTILIZAÇÃO DO HEADER*/
+
+/*ESTILIZAÇÃO DO MENU DO HEADER*/
+header button {
+  border: none;
+  background-color: transparent;
+}
+
+/*ESTILIZAÇÃO DA LOGO*/
+header h2 {
+  color: white;
+}
+
+header h2 > span {
+  font-weight: 400;
+}
+
+/*ESTILIZAÇÂO DO FORM DE BUSCA DENTRO DO HEADER*/
+header form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header form img {
+  max-width: 20px;
+  position: absolute;
+  left: 8px;
+}
+
+header form input {
+  background-color: #008bb4;
+  height: 40px;
+  padding-left: 2.3rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  color: white;
+  border: none;
+}
+
+header form input:focus {
+  outline: none;
+}
+header form input::placeholder {
+  color: white;
+}
+
+/*FIM DA ESTILIZAÇÃO DO HEADER*/
+
+/*INÍCIO DA ESTILIZAÇÃO DAS NOTÍCIAS PRINCIPAIS*/
+
+/*DEFININDO TAMANHO E POSIÇÃO DO CONTEÚDO*/
+.img-destaque {
+  border-radius: 1rem;
+  position: relative;
+  height: 500px;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/*ADICIONANDO EFEITO SOMBREADO NA IMAGEM*/
+.overlay-destaque {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+/*ESTILIZAÇÃO DA IMG DA NOTÍCIA PRINCIPAL*/
+.img-destaque img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+/*ESTILIZAÇÃO DOS TEXTOS DA NOTÍCIA PRINCIPAL*/
+.destaque-content {
+  position:absolute;
+  max-width: 450px;
+  bottom: 3rem;
+  left: 2rem;
+  z-index: 2;
+  color: white;
+  padding: 0 .3rem;
+}
+
+.destaque-content h1 {
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.destaque-content p {
+  line-height: 1.5;
+  font-size: .875rem;
+  margin-top: 1.5rem;
+}
+
+/*FIM DA ESTILIZAÇÃO DAS NOTÍCIAS PRINCIPAIS*/
+
+/*INÍCIO DA ESTILIZAÇÃO DE OUTRAS NOTÍCIAS*/
+
+.outras-noticias {
+  background-color: #EAEAEA;
+  padding-bottom: 2rem;
+}
+
+.outras-noticias > h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #040404;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.outras-noticias ul.center {
+  display: flex;
+  gap: 1rem;
+  grid-template-columns: 1fr 200px;
+  align-items: flex-start;
+}
+
+.outras-noticias ul.center li {
+  border-radius: 1rem;
+}
+
+.noticias-gerais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1;
+  gap: 1rem;
+  width: 100%;
+}
+
+.noticia-item {
+  border-radius: 1rem;
+  background-color: white;
+  padding-bottom: 1rem;
+}
+
+.noticia-item img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.noticia-item h3 {
+  color: #33439B;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-top: .5rem;
+  padding: 0 .5rem;
+}
+
+.noticia-item h1 {
+  color: #303336;
+  margin-top: 1rem;
+  padding: 0 .5rem;
+}
+
+.noticia-item p {
+  color: #7B8591;
+  line-height: 1.4;
+  font-size: .875rem;
+  margin-top: .5rem;
+  padding: 0 .5rem .5rem;
+}
+.mais-lidas {
+  grid-column: 3;
+  grid-row: 1 / -1;
+  background-color: white;
+}
+
+.mais-lidas > h1 {
+  color: white;
+  background-color: #3F51B5;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mais-lidas > div {
+  padding: .5rem;
+  display: flex;
+  max-width: 500px;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.mais-lidas > div > img {
+  max-width: 150px;
+  height: 150px;
+}
+
+.mais-lidas > div p {
+  color: #7B8591;
+  font-size: .875rem;
+  line-height: 1.4;
+  max-width: 300px;
+}
+
+.mais-lidas .natureza h2 {
+  color: #40BE65;
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+
+.mais-lidas .mundo-animal h2 {
+  color: #0072CA;
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+
+.mais-lidas .tecnologia h2 {
+  color: #D9A34A;
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+
+.mais-lidas .lifestyle h2 {
+  color: #FF4967;
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  background-color: #0aacdc;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  padding: 2rem 0;
+  color: white;
+}
+
+.noticia {
+  background-color: #EAEAEA;
+  padding: 2rem 0;
+}
+
+.noticia .center {
+  display: grid;
+  grid-template-columns: 1fr .3fr;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.noticia-conteudo {
+  grid-column: 1;
+  background-color: white;
+  padding: 1rem 5%;
+  border-radius: 1rem;
+}
+
+.noticia-conteudo .titulo {
+  color: #303336;
+  text-align: left;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.noticia-conteudo .autor {
+  color: #858585;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: .875rem;
+  margin: 1rem 0;
+}
+
+.noticia-conteudo .texto {
+  color: #7B8591;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.noticia-conteudo .subtitulo {
+  font-weight: 700;
+  color: #7B8591;
+  margin: 1rem 0;
+}
+
+.noticia .mais-lidas {
+  grid-column: 2;
+  list-style: none;
+}
+
+.noticia .mais-lidas > div {
+  flex-direction: column;
+  text-align: center;
+}
+
+.busca-noticias > h1 {
+  color: #303336;
+}
+
+.busca-resultados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.busca-resultados > h1 {
+  width: 100%;
+}
+
+@media (max-width:876px) {
+  .outras-noticias ul.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .noticia .center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .noticia .mais-lidas{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+
+  .noticia .mais-lidas h1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width:550px) {
+  header .center {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

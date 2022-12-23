@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "63a4ab4443995dbc7ff34b11"
+  },
+  "titulo": "Como ser um programador",
+  "imagem": "https://blog.dankicode.com/wp-content/uploads/2022/03/cursos-de-programacao-350x230.jpg",
+  "categoria": "educação",
+  "conteudo": "<p>Este outro curso, assim como o pacote fullstack, se quer tem concorrente no brasil, nada é tão completo quanto este curso de desenvolvimento de games.Então, o melhor curso de desenvolvimento de games do brasil ensinará ao aluno a ter a capacidade de desenvolver grades games. O aluno utilizará as principais engines do mercado, Unity, Game Maker, Unreal, Godot.</p>",
+  "slug": "como-ser-um-programador"
+},{
+  "_id": {
+    "$oid": "63a4acd743995dbc7ff34b12"
+  },
+  "titulo": "Como ser um programador front-end",
+  "imagem": "https://blog.dankicode.com/wp-content/uploads/2022/03/cursos-de-programacao-350x230.jpg",
+  "categoria": "educação",
+  "conteudo": "<p>Este outro curso, assim como o pacote fullstack, se quer tem concorrente no brasil, nada é tão completo quanto este curso de desenvolvimento de games.Então, o melhor curso de desenvolvimento de games do brasil ensinará ao aluno a ter a capacidade de desenvolver grades games. O aluno utilizará as principais engines do mercado, Unity, Game Maker, Unreal, Godot.</p>",
+  "slug": "como-ser-um-programador-front-end"
+},{
+  "_id": {
+    "$oid": "63a4acf643995dbc7ff34b13"
+  },
+  "titulo": "Como estudar de um jeito eficiente",
+  "imagem": "https://blog.dankicode.com/wp-content/uploads/2022/03/cursos-de-programacao-350x230.jpg",
+  "categoria": "educação",
+  "conteudo": "<p>Este outro curso, assim como o pacote fullstack, se quer tem concorrente no brasil, nada é tão completo quanto este curso de desenvolvimento de games.Então, o melhor curso de desenvolvimento de games do brasil ensinará ao aluno a ter a capacidade de desenvolver grades games. O aluno utilizará as principais engines do mercado, Unity, Game Maker, Unreal, Godot.</p>",
+  "slug": "como-estudar-de-um-jeito-eficiente"
+}]

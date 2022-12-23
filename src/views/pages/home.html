@@ -1,0 +1,44 @@
+
+<%- include("../layouts/header.html") %>
+<section class="noticias-destaque">
+    <div class="center">
+      <div class="img-destaque">
+        <div class="overlay-destaque"></div>
+        <img src="<%- posts[posts.length - 1].imagem %>" alt="imagem destaque">
+        <div class="destaque-content">
+          <a style="color: white;" href="<%= posts[posts.length - 1].slug %>"><h1><%- posts[posts.length - 1].titulo %></h1></a>
+          <p><%- posts[posts.length - 1].conteudo.substr(0, 200) %>...</p>
+        </div>
+      </div><!--img-destaque-->
+    </div><!--center-->
+  </section><!--noticia-destaque-->
+
+  <section class="outras-noticias">
+      <h1>Últimas Publicações</h1>
+      <ul class="center">
+        <div class="noticias-gerais">
+        <% posts.map((post, index) => {  %>
+        <li class="noticia-item">
+          <a href="<%- post.slug %>"><img src="<%- post.imagem %>" alt="imagem 2"></a>
+          <h3><%- post.categoria %></h3>
+          <h1><%- post.titulo %></h1>
+          <p><%- post.conteudo.substr(0, 200) %></p>
+        </li><!--noticia-1-->
+        <% }) %>
+        </div>
+        <li class="mais-lidas">
+          <h1>As mais lidas</h1>
+          <% posts.map(post => { %>
+          <div class="natureza">
+            <a href="natureza-artico"><img src="<%- post.imagem %>" alt=""></a>
+            <div>
+              <h2><%- post.categoria %></h2>
+              <h2 style="color: #303336;"><%- post.titulo %></h2>
+              <p><%- post.conteudo.substr(0, 50) %></p>
+            </div>
+          </div><!--natureza-->
+          <% }) %>
+        </li><!--mais-lidas-->
+      </ul><!--center-->
+  </section><!--outras-noticias-->
+<%- include("../layouts/footer.html") %>
