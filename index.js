@@ -23,6 +23,7 @@ app.set("views", path.join(__dirname, "src/views"))
 //salvando os caminhos para usar no router
 const router = express.Router()
 app.use("/", router)
+app.use("/:slug", router)
 
 router.get("/", async (req, res) => {
   if(req.query.busca == null) {
@@ -40,6 +41,14 @@ router.get("/", async (req, res) => {
     }
   }
   
+})
+
+router.get("/:slug", async (req, res) => {
+  let posts = await Posts.find({})
+  Posts.findOneAndUpdate({slug:req.params.slug}, {$inc: {views: 1}}, {new: true}, (err, noticia) => {
+    console.log(noticia)
+    res.status(200).render("pages/single", {noticia:noticia, posts: posts})
+  })
 })
 
 //rodando servidor
